@@ -1,0 +1,44 @@
+@import "../../../../assets/variables.scss";
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.todo-item-wrap {
+  background-color: #fff;
+  height: 50px;
+  display: flex;
+  position: relative;
+  .left {
+    display: flex;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+  }
+  .right {
+    font-size: 18px;
+    flex: 1;
+    overflow: hidden;
+    line-height: 50px;
+    text-overflow: ellipsis;
+    color: $TextFontColor;
+  }
+  .close-btn {
+    background-color: #fff;
+    position: absolute;
+    right: 1px;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    animation: fade-in .3s ease-in;
+  }
+}

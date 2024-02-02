@@ -1,0 +1,27 @@
+@import "../../../../assets/variables.scss";
+
+.todo-input-wrap {
+  height: 48px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 24px;
+  .left {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 60px;
+  }
+  .right {
+    width: 100%;
+    .custom-input{
+      height: 48px;
+      width: 100%;
+      border: none;
+      outline: none;
+      font-size: 18px;
+    }
+  }
+}

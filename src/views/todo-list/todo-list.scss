@@ -1,0 +1,59 @@
+@import "../../assets/variables.scss";
+
+.todo-list-wrap {
+  min-height: 100vh;
+  position: relative;
+  .image {
+    height: 400px;
+    background-image: url('../../../public/back1.jpg');
+    z-index: 1;
+  }
+  .bottom-gray {
+    height: calc(100vh - 400px);
+    background-color: #eee;
+  }
+  .tip {
+    position: absolute;
+    top: 400px;
+    right: 0;
+    text-align: right;
+    margin-right: 16px;
+    font-size: 18px;
+    color: $TextFontColor;
+  }
+  .todo-list-wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .content {
+      width: 40%;
+      .logo {
+        font-size: 36px;
+        color: white;
+        font-weight: bold;
+        margin: 24px 0 36px 0;
+      }
+      .todo-list-container {
+        box-shadow: $CardBoxShadow;
+        border-radius: 8px;
+        overflow: hidden;
+        .info-wrap {
+          padding: 0 22px;
+          background-color: #fff;
+          height: 50px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: $TextFontColor;
+          .ant-btn {
+            color: $TextFontColor;
+            font-weight: $TextFontWeight;
+          }
+        }
+      }
+    }
+  }
+}
